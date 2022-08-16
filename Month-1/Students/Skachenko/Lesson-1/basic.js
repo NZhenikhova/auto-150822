@@ -8,3 +8,4 @@ npm install cypress
 npx cypress open
 */
 
+console.log('theme')
