@@ -39,6 +39,4 @@ console.log(rainy <= sunny);   // false, так как сравниваются 
 
 rainy = 99;
 sunny = 100;
-console.log(rainy <= sunny);   // true, так как сравниваются переменные типа number 
-
-
+console.log(rainy <= sunny);   // true, так как сравниваются переменные типа number
