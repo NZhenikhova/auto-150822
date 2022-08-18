@@ -17,6 +17,40 @@ if (time > 10 && time < 50)(
     console.log('Третий блок');
 ));
 */
+/////////////////////////////////////////////////////////////
 const dog = 5;
 const cat = '5';
-dog === cat ? console.log('верно') : console.log('не верно');
+dog == cat ? console.log('верно') : console.log('не верно');
+/////////////////////////////////////////////////////////////
+let lang = 'en'
+switch (lang) {
+    case 'ru':
+    console.log('1')
+    break;
+    case 'en':
+    console.log('2')
+    break;
+    case 'fr':
+    console.log('3')
+    break;
+    default:
+    console.log('ничего')
+};
+////////////////////////////////////////////////////////
+let num = 1;
+let result;
+switch (num) {
+    case '1':
+    result = 'зима';
+    break;
+    case '2':
+    result = 'весна';
+    break;
+    case '3':
+    result = 'лето';
+    break;
+    case '4':
+    result = 'осень';
+    break;
+    console.log(result);
+};
