@@ -116,9 +116,9 @@ case "user":
 
 */
 
-let x = 5;
+let numb = 5;
 
-switch(x){
+switch(numb){
 case 1:
     console.log("Весна");
 break;
