@@ -37,20 +37,23 @@ switch (lang) {
     console.log('ничего')
 };
 ////////////////////////////////////////////////////////
-let num = 1;
+let num = '2';
 let result;
 switch (num) {
     case '1':
     result = 'зима';
-    break;
+    console.log(result);
+    break;    
     case '2':
     result = 'весна';
+    console.log(result);
     break;
     case '3':
     result = 'лето';
+    console.log(result);
     break;
     case '4':
     result = 'осень';
-    break;
     console.log(result);
+    break;
 };
