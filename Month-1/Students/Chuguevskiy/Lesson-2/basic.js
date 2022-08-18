@@ -116,7 +116,7 @@ case "user":
 
 */
 
-let x = 3;
+let x = 5;
 
 switch(x){
 case 1:
@@ -130,5 +130,7 @@ case 3 :
 break;
 case 4:
     console.log("Зима");
+    break;
+    default : console.log("Дурашка нужно выбрать от 1 до 4 ");
 };
 
