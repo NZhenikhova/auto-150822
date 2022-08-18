@@ -25,27 +25,27 @@ number/number, !=
 string/number, !==
 */
 
-let a = 'firstName'
-let b = 'secondName'
-console.log(a>b)
+let a = 'firstName';
+let b = 'secondName';
+console.log(a>b);
 a = 1234
 b = 4321
-console.log(a<b)
+console.log(a<b);
 a = '1234'
 b = 4321
-console.log(a>=b)
+console.log(a>=b);
 a = 1234
 b = 4321
-console.log(a<=b)
+console.log(a<=b);
 a = '1234'
 b = 4321
-console.log(a==b)
+console.log(a==b);
 a = 'firstName'
 b = 'secondName'
-console.log(a===b)
+console.log(a===b);
 a = 1234
 b = 4321
-console.log(a!=b)
+console.log(a!=b);
 a = '1234'
 b = 4321
-console.log(a!==b)
+console.log(a!==b);
