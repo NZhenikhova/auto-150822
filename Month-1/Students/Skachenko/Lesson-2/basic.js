@@ -37,7 +37,7 @@ switch (lang) {
     console.log('ничего')
 };
 ////////////////////////////////////////////////////////
-let num = '2';
+let num = '4';
 let result;
 switch (num) {
     case '1':
