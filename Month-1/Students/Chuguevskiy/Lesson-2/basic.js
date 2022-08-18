@@ -55,7 +55,7 @@ console.log("Второй блок");
 }else{
     console.log("Третий блок");
 };
-*/
+
 
 
 // 10 < 10 ? console.log("true") : console.log("false"); // Тернарный оператор 
@@ -66,3 +66,71 @@ const dog = 5;
 const cat = "5";
 
 dog === cat ? console.log("true") : console.log("false");
+
+
+
+
+const lang = "ar";
+
+switch(lang){
+case "ru":
+console.log("1");
+break;
+case "en":
+console.log("2");
+break;
+case "fr":
+console.log("3");
+break;
+default:
+    console.log("Nothing");
+
+};
+
+
+
+
+
+
+
+
+
+
+switch("Sandra"){
+case "Tom":
+console.log("first name");
+break;
+
+case "Andy":
+console.log("last name");
+break;
+
+case "Other":
+case "Admin":
+case "user":
+    console.log("Остальные");
+    break;
+    default : console.log("Null");
+};
+
+
+*/
+
+let x = 5;
+
+switch(x){
+case 1:
+    console.log("Весна");
+break;
+case 2:
+    console.log("Лето");
+break;
+case 3 :
+    console.log("Осень");
+break;
+case 4:
+    console.log("Зима");
+    break;
+    default : console.log("Дурашка нужно выбрать от 1 до 4 ");
+};
+
