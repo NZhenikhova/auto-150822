@@ -17,7 +17,6 @@ npx cypress open
 !== - строгое неравенство
 string/string, >
 number/number, <
-string/number, =
 string/string, >=
 number/number, <=
 string/number, ==
@@ -34,9 +33,6 @@ b = 4321
 console.log(a<b)
 a = '1234'
 b = 4321
-console.log(a=b)
-a = 'firstName'
-b = 'secondName'
 console.log(a>=b)
 a = 1234
 b = 4321
