@@ -9,3 +9,8 @@ if(index > 0 && index < 5){
 } else if (index !=10) {
     console.log('Третий блок');
 };
+
+const dog = 5;
+const cat = '5';
+
+dog === cat ? (console.log("привет")) : (console.log('пока'));
