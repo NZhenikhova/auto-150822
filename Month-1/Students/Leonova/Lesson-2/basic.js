@@ -106,8 +106,6 @@ switch (month) {
 
 // Задача 5
 
-
-
   const browser = 'Edge';
 switch (browser) {
     case 'Edge': console.log ("You've got the Edge!");
