@@ -82,11 +82,71 @@ if(browser == 'Edge') {
   */
 
   //Задание 1//
-let a = 'test' 
-if (a == 'test') {
-  console.log('верно');
-} else {
-  console.log('не верно');
-};
+console.log('///Задание 1///');
+let a = 'test';
+a == 'test' ? console.log('верно') : console.log('не верно');
+a = null;
+
   //Задание 2//
-let age = 18
+console.log('///Задание 2///');
+let age = 18;
+if (age > 30) {
+console.log('Возраст пользователя подходящий для приема на работу');
+} else { if (age > 18 && age <= 30) {
+  console.log('Категория - 1')
+  } else { if (age == 18) {
+     console.log('Возраст совпал')
+     } else { console.log('Кандидат слишком юн. Пусть пробует позже.')   
+     };
+  };
+};
+
+  //Задание 3//
+console.log('///Задание 3///');
+a = 1;
+let b = 3;
+a <= 1 && b >= 3 ? console.log(a + b) : console.log(a - b);
+
+  //Задание 4//
+console.log('///Задание 4///');
+let month = 0;
+switch (month) {
+  case 1:
+  case 2:
+  case 12:
+  console.log('зима');
+  break;  
+  case 3:
+  case 4:
+  case 5:
+  console.log('весна');
+  break;  
+  case 6:
+  case 7:
+  case 8:
+  console.log('лето');
+  break;  
+  case 9:
+  case 10:
+  case 11:
+  console.log('осень');
+  break;  
+  default: console.log('Такого месяца не существует'); 
+};
+
+
+  //Задание 5//
+console.log('///Задание 5///');
+let browser = 'Edge';
+switch (browser) {
+  case 'Edge':
+    console.log("You've got the Edge!");
+  break;
+  case 'Chrome':
+  case 'Firefox':
+  case 'Safari':
+  case 'Opera':
+  console.log('Okay we support these browsers too');
+  break;
+  default: console.log('We hope that this page looks ok!');
+};
