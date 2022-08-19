@@ -8,7 +8,6 @@ else{
     console.log ('Неверно');
 };
 
-
 // Задача 2 
 
 let age = 18;
