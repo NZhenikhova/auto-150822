@@ -9,7 +9,6 @@ else{
 };
 
 
-
 // Задача 2 
 
 let age = 18;
@@ -70,7 +69,6 @@ else
 
 
 // Задача 4
-
 
 const month = '10';
 switch (month) {
