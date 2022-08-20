@@ -108,7 +108,9 @@ if (varE <= 1 && varF >= 3){
     console.log (varE - varF);
 }
 
+
 //task 3 вариант 2
+
 let varyA = 1;
 let varyB = 3;
 varyA <= 1 && varyB >= 3 ? console.log(varyA + varyB) : (console.log(varyA - varyB));
@@ -120,6 +122,7 @@ varyC <= 1 && varyD >= 3 ? console.log(varyC + varyD) : (console.log(varyC - var
 let varyE = 3;
 let varyF = 5;
 varyE <= 1 && varyF >= 3 ? console.log(varyE + varyF) : (console.log(varyE - varyF));
+
 
 //task 4 вариант 1
 
@@ -146,6 +149,7 @@ else if (month <1 || month > 12){
 else if (month % 1 !== 0){
     console.log('Месяц задан неверно');
 }
+
 
 //task 4 вариант 2
 
