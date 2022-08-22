@@ -21,8 +21,16 @@ monthly();
 */
 
 
-function month (parametrNum) {
-    parametrNum > 18 ? console.log('true') : console.log('false');
-    
+let month = (parametrNum) => {
+    parametrNum > 18 ? console.log('true') : console.log('false');    
 };
-month(19);
+month(11);
+
+
+
+
+function summ (a, b) {
+    return a + b 
+};
+let result = summ (3, 6);
+console.log(result);
