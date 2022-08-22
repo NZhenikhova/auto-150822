@@ -25,7 +25,7 @@ function NameLastName(){
 ;}
 NameLastName();
 
-*/
+
 
 
 /// function expression
@@ -37,3 +37,23 @@ const functions = function (){
 };
 
 functions ();
+
+
+
+
+
+function findElement (paramentName){
+    console.log(`На странице ${paramentName}`)
+};
+
+let page = "Home";
+
+findElement(page);
+
+*/
+let numb = 11;
+function numbs(){
+numb > 18 ? console.log("true") : console.log("false")  
+};
+numbs();
+
