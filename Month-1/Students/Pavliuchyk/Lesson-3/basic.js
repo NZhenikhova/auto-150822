@@ -103,3 +103,17 @@ function checking (age){
     let param1 = 10;
     let param2 = 5;
     console.log(fSumm(param1, param2));
+
+
+    // 
+
+    function isStrongPassword(password){
+const length = password.length;
+return length > 8 && length < 20;
+    }
+    const one = isStrongPassword('password');
+    const two = isStrongPassword('crazycrazy');
+    const three = isStrongPassword('12312312312312312313213123');
+    console.log('Check word password is strong ', one);
+    console.log('Check word password is strong ', two);
+    console.log('Check word password is strong ', three);
