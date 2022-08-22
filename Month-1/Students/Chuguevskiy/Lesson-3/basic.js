@@ -120,7 +120,10 @@ console.log(fullResult);
 
 let func = (numb1,numb2) => {
     let result = numb1+numb2;
-    console.log(result);
+    return result;
 };
 
-func(1,2);
+let numb1 = 1;
+let numb2 =2;
+
+console.log(func(numb1,numb2));
