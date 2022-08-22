@@ -1,10 +1,26 @@
+/// Function declaration 
 /*
-Устанавливаем cypress:
-npm install cypress
+
+function nameFunction(){
+    console.log("Декоративная Функция");
+}
+
+nameFunction();
+
+let fruit = 'apple';
+let count = 23;
+
+function showCountApples(){
+    console.log(`I have ${count} my  % {fruit}`);
+}
+showCountApple();
+
 */
 
-/*
-Устанавливаем проверочные тесты и запускаем cypress:
-npx cypress open
-*/
 
+let name = "Danill";
+let lastName = "Verulane";
+function NameLastName(){
+    console.log (`I ${name} ${lastName}`)
+;}
+NameLastName();
