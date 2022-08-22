@@ -25,5 +25,4 @@ function month (parametrNum) {
     parametrNum > 18 ? console.log('true') : console.log('false');
     
 };
-let parametrNum = 20;
-month();
+month(19);
