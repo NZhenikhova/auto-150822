@@ -15,14 +15,25 @@ function showCountApples(){
 }
 showCountApple();
 
-*/
+
 
 
 let name = "Danill";
 let lastName = "Verulane";
 function NameLastName(){
-    console.log (`I ${name} ${lastName}`)
+    console.log (`I am ${name} ${lastName}`)
 ;}
 NameLastName();
 
+*/
 
+
+/// function expression
+
+
+
+const functions = function (){
+    console.log("function expression")
+};
+
+functions ();
