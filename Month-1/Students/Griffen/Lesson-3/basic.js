@@ -47,4 +47,4 @@ let number = 10
 function test (number){
 number >= 18 ? console.log ('true') : console.log ('false');    
 }
-test();
+test(); 
