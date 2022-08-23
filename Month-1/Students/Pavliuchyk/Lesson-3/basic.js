@@ -117,3 +117,55 @@ return length > 8 && length < 20;
     console.log('Check word password is strong ', one);
     console.log('Check word password is strong ', two);
     console.log('Check word password is strong ', three);
+
+
+//HOMEWORK
+
+// Task 1
+//Напишем стрелочную функцию, проверяющую квартиру. 
+//Она принимает два аргумента: площадь (число) и название улицы (строку):
+//площадь должна быть больше либо равна 100 кв.м ИЛИ больше либо равна 80 кв.м И улица должна быть равна “School-street”
+
+// условие понято мной так - для результата true надо: 
+// 1) площадь >=100 
+// ИЛИ 
+// 2) площадь >=80 И название улицы School-street
+
+// иначе можно было бы обойтись только вторым условием 
+
+let funcApart = (square, streetName) => {
+    square >= 100 || (square >= 80 && streetName == 'School-street') ? console.log('Соответствует критериям') : console.log('Не соответствует критериям');
+  }
+
+funcApart (100, 'anystreet');  // соответствует (так как площадь соответствует, название улицы не важно)
+funcApart (80, 'School-street');  // соответствует (так как по второй части условия и площадь, и название улицы true) 
+funcApart (50, 'School-street');  // не соответствует (площадь false, название улицы, хоть и true само по себе, не важно так как логический оператор &&)
+
+
+// Task 2
+// Реализуйте функцию, который проверяет формат указанного телефона.
+// Если телефон начинается с +, значит это международный формат.
+
+let funcPhoneCheck = function(phoneNumber) {
+    phoneNumber[0] == '+' ? console.log('Номер тел. в международном формате') : console.log('Номер тел. в обычном формате');
+    }
+
+funcPhoneCheck ('+380960000000'); 
+funcPhoneCheck ('380960000000'); 
+
+
+// Task 3
+// Напишите стрелочную функцию которая проверит тип данных аргумента на ‘string’ и выведет в консоль true.
+
+let dataTypeCheck = (parametrName1) => {
+    typeof parametrName1 == 'string' ? console.log('true') : console.log('false');
+}
+
+dataTypeCheck ('56'); // true потому что string
+dataTypeCheck ('abracadabra'); // true потому что string
+dataTypeCheck (56); // false потому что number
+const numm = 0.5;
+dataTypeCheck (numm); // false потому что number
+let boolVar = true;
+dataTypeCheck (boolVar); // false потому что boolean 
+
