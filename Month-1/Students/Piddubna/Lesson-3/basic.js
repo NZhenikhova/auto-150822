@@ -116,7 +116,7 @@ console.log('This is summary of',newSum);
 // console.log('Check whether password is strong',two);
 // console.log('Check whether password is strong',three);
 
-//Homework is located below
+//Homework for the lektion 3 is located below
 //Task 1
 let checkApar = (square,street) => {
     return (square >= 80 && square >= 100 && street == 'School-street')
