@@ -46,15 +46,15 @@
 // findElementbyParams(page, 'Work page', 'Terms page');
 
 //Solution 1
-// let myNumb = 10;
-// function Numb(){
-//    if (myNumb == 18 || myNumb > 18){
-//     console.log('true');
-//    }else{
-//     console.log('false');
-//    }
-// };
-// Numb();
+let myNumb = 10;
+function Numb(){
+   if (myNumb == 18 || myNumb > 18){
+    console.log('true');
+   }else{
+    console.log('false');
+   }
+};
+Numb();
 
 // let func1 = function(num1, num2){
 //     let result = num1*num2;
@@ -94,11 +94,11 @@
 // console.log('Full result', fullResult);
 
 //Solution 2
-// function equation(one, two){
-//     return one+two;
-// };
-// let newSum = equation(5,7);
-// console.log('This is summary of',newSum);
+function equation(one, two){
+    return one+two;
+};
+let newSum = equation(5,7);
+console.log('This is summary of',newSum);
 
 
 //help for hometask
