@@ -114,7 +114,7 @@ function summ(a,b){
 
 const fullResult = summ(summ(1,3), summ(5,6));
 console.log(fullResult);
-*/
+
 
 
 
@@ -127,3 +127,61 @@ let numb1 = 1;
 let numb2 =2;
 
 console.log(func(numb1,numb2));
+
+
+function  isStrongPassword(password){
+    const length = password.length;
+    return length > 8 && length <20;
+}
+
+const one =isStrongPassword('password');
+const two =isStrongPassword('crazylastochka');
+
+console.log(`Check word password is strong `, one );
+console.log(`Check word password is strong `, two );
+
+*/
+
+/////////////////////////////////////// Home Task 
+
+
+//Task 1
+
+let func = (numb,string)=>{
+    result = numb >=100 && string == "School-street" ;
+    return (result)
+};
+
+numb = 100;
+string = "School-street";
+
+console.log(func(numb,string));
+
+//Task 2
+
+
+
+function numberPhone(number1){
+    result =number1;
+    number1[0] == "+"? console.log("Международный номер") : console.log("Немеждународный номер");   
+};
+
+let number1 = "+380970951282";  // input
+
+numberPhone(number1);
+
+
+
+//Task 3
+
+
+let words = (example) => { 
+    return string;
+};
+
+example = ("Test");         // input 
+console.log(typeof example);
+words();
+
+
+
