@@ -46,15 +46,15 @@
 // findElementbyParams(page, 'Work page', 'Terms page');
 
 //Solution 1
-let myNumb = 10;
-function Numb(){
-   if (myNumb == 18 || myNumb > 18){
-    console.log('true');
-   }else{
-    console.log('false');
-   }
-};
-Numb();
+// let myNumb = 10;
+// function Numb(){
+//    if (myNumb == 18 || myNumb > 18){
+//     console.log('true');
+//    }else{
+//     console.log('false');
+//    }
+// };
+// Numb();
 
 // let func1 = function(num1, num2){
 //     let result = num1*num2;
@@ -94,24 +94,54 @@ Numb();
 // console.log('Full result', fullResult);
 
 //Solution 2
-function equation(one, two){
-    return one+two;
-};
-let newSum = equation(5,7);
-console.log('This is summary of',newSum);
+// function equation(one, two){
+//     return one+two;
+// };
+// let newSum = equation(5,7);
+// console.log('This is summary of',newSum);
 
 
 //help for hometask
-function isStrongPassword(password) {
-const length = password.length; 
+// function isStrongPassword(password) {
+// const length = password.length; 
 
-return length > 8 && length < 20
+// return length > 8 && length < 20
+// };
+
+// const one = isStrongPassword('password');
+// const two = isStrongPassword('crazylastochka');
+// const three = isStrongPassword('randomcrapgoesherecantfixit');
+
+// console.log('Check whether password is strong',one);
+// console.log('Check whether password is strong',two);
+// console.log('Check whether password is strong',three);
+
+//Homework is located below
+//Task 1
+let checkApar = (square,street) => {
+    return (square >= 80 && square >= 100 && street == 'School-street')
 };
+let square = 80;
+let street = 'School-street';
+if (checkApar(square, street)){
+console.log("It is valid apartment")
+}else{
+console.log("It is not valid apartment")};
 
-const one = isStrongPassword('password');
-const two = isStrongPassword('crazylastochka');
-const three = isStrongPassword('randomcrapgoesherecantfixit');
+//Task 2
+let phone = '666565666';
+let inPhone = '+46776786868';
+let internPhone = (phone) => phone[0] === '+';
 
-console.log('Check whether password is strong',one);
-console.log('Check whether password is strong',two);
-console.log('Check whether password is strong',three);
+internPhone('666565666'); // false
+internPhone('+46776786868'); // true
+
+console.log('This is the not internetional phone',phone);
+console.log('This is internetional phone',inPhone);
+
+//Task 3
+let checkType = (datatype) => {
+    return (typeof datatype) 
+};
+let datatype = "Hi there";
+console.log('Here is the check of data type', typeof datatype);
