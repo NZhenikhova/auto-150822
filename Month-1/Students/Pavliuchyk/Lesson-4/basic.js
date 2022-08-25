@@ -26,8 +26,22 @@ console.log(myPets.includes('snake'));
 myPets.unshift('parrot');
 console.log(myPets);
 
-const allFavoriteCars = ['BMW', 'Mercedes', 'Volvo', 'Volkswagen']
-allFavoriteCars.unshift('Toyota');
-console.log('Массив с новым элементом в начале ', allFavoriteCars);
-allFavoriteCars.push('Kia');
-console.log('Массив с новым элементом в конце ', allFavoriteCars);
+// const allFavoriteCars = ['BMW', 'Mercedes', 'Volvo', 'Volkswagen']
+// allFavoriteCars.unshift('Toyota');
+// console.log('Массив с новым элементом в начале ', allFavoriteCars);
+// allFavoriteCars.push('Kia');
+// console.log('Массив с новым элементом в конце ', allFavoriteCars);
+
+// циклы (от, до, шаг)
+for (let i = 0; i < 10; i++){
+    console.log(i);
+}
+
+const allCar = ['BMW', 'Mercedes', 'Volvo', 'Volkswagen']
+for (let car = 0; car < 5; car ++){
+    console.log(allCar[car]);
+}
+
+for (let a = 0; a <= 10; a++){
+    console.log(a);
+}
