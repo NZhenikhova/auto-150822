@@ -19,5 +19,22 @@ Leсtion 4
 // const allAuto = [['BMW', 'Mercedes', 'Volvo', 'Volswagen'], [1,2,3], ['string', true,12]];
 // console.log('All auto result', allAuto[0][1]);
 //Task one for this class
-const myPet = ['cat', 'dog', 'chicken', 'cow', 'parrot'];
-console.log('Arrow length'+'',myPet.length,myPet[3]);
+// const myPet = ['cat', 'dog', 'chicken', 'cow', 'parrot'];
+// console.log('Arrow length'+'',myPet.length,myPet[3]);
+
+// const allMachines = ['BMW', 'Mercedes', 'Volvo', 'Volswagen'];
+//console.log(allMachines.push('Toyota'));//added element to the end of the array
+//console.log(allMachines.pop());//deletes last element
+
+// console.log('Check splice', allMachines.splice(0,1));
+
+// const petsName = ['Marfa', 'Kyzya', 'Iko'];
+// console.log(petsName.includes('Lady'));//checks whether it includes
+
+// petsName.unshift('Kesha');
+// console.log(petsName);
+
+let = allFavoriteCars = ['BMW', 'Mercedes', 'Volvo', 'Volkswagen']
+allFavoriteCars.push('Saab');
+allFavoriteCars.unshift('Toyota');
+console.log(allFavoriteCars);
