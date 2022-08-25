@@ -26,7 +26,7 @@ console.log(myPets.includes('snake'));
 myPets.unshift('parrot');
 console.log(myPets);
 
-allFavoriteCars = ['BMW', 'Mercedes', 'Volvo', 'Volkswagen']
+const allFavoriteCars = ['BMW', 'Mercedes', 'Volvo', 'Volkswagen']
 allFavoriteCars.unshift('Toyota');
 console.log('Массив с новым элементом в начале ', allFavoriteCars);
 allFavoriteCars.push('Kia');
