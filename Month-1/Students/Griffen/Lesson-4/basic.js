@@ -21,4 +21,4 @@ console.log (myPets.length, myPets[2])
 const allFavoriteCars = ['BMW', 'Mercedes', 'Volvo', 'Volkswagen']
 allFavoriteCars.unshift('Toyota')
 allFavoriteCars.push('Kia')
-console.log (allFavoriteCars)
+console.log (allFavoriteCars);
