@@ -1,10 +1,9 @@
-/*
-Устанавливаем cypress:
-npm install cypress
-*/
+// Массивы
 
-/*
-Устанавливаем проверочные тесты и запускаем cypress:
-npx cypress open
-*/
+const allCars = ['BMW', 'Mercedes', 'Volvo'];
+console.log('Our array', allCars);
+console.log (allCars[0]);
 
+
+const myPets = ['cat', 'dog', 'horse', 'frog', 'snail']
+console.log (myPets.length, [2])
