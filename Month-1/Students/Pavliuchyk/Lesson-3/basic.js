@@ -140,7 +140,9 @@ let funcApart = (square, streetName) => {
 funcApart (100, 'anystreet');  // соответствует (так как площадь соответствует, название улицы не важно)
 funcApart (80, 'School-street');  // соответствует (так как по второй части условия и площадь, и название улицы true) 
 funcApart (50, 'School-street');  // не соответствует (площадь false, название улицы, хоть и true само по себе, не важно так как логический оператор &&)
-
+/* Comments Task 1
+1. Отлично, тут можно крутить задачу по разному.
+*/
 
 // Task 2
 // Реализуйте функцию, который проверяет формат указанного телефона.
@@ -152,10 +154,13 @@ let funcPhoneCheck = function(phoneNumber) {
 
 funcPhoneCheck ('+380960000000'); 
 funcPhoneCheck ('380960000000'); 
-
+/* Comments Task 2
+Молодец!
+*/
 
 // Task 3
-// Напишите стрелочную функцию которая проверит тип данных аргумента на ‘string’ и выведет в консоль true.
+// Напишите стрелочную функцию которая проверит тип данных аргумента на ‘string’
+// и выведет в консоль true.
 
 let dataTypeCheck = (parametrName1) => {
     typeof parametrName1 == 'string' ? console.log('true') : console.log('false');
@@ -168,4 +173,9 @@ const numm = 0.5;
 dataTypeCheck (numm); // false потому что number
 let boolVar = true;
 dataTypeCheck (boolVar); // false потому что boolean 
+
+/* Comments Task 3
+Молодец!
+*/
+
 

@@ -59,7 +59,12 @@ const flat = (square, street) => {
     street = street == 'School-street' ? 'true' : 'false';
 return square, street
 };
-console.log(flat(101,'School-street'));
+console.log('MY RESULT', flat(101,'School-street'));
+
+/* Comments Task 1
+1. Мы не можем вернуть результат двух переменных вот так = return square, street,
+ так как return или результат выражения или результат переменной (можно пойти в объекты, но это дальше)
+*/
 
 /// Задание 2/// 
 /*Реализуйте функцию, который проверяет формат указанного телефона.
@@ -72,6 +77,10 @@ function phoneNumber (a) {
 };
 console.log(phoneNumber('+380991234567'));
 
+/* Comments Task 2
+1. Следим за назанием переменных 
+*/
+
 /// Задание 3/// 
 /*Напишите стрелочную функцию которая проверит тип данных аргумента на ‘string’ 
 и выведет в консоль true.*/ 
@@ -82,3 +91,4 @@ const typeCheck = (b) => {
     return result;
 };
 console.log(typeCheck('+380991234567'));
+

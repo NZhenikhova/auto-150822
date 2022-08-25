@@ -127,6 +127,10 @@ if (checkApar(square, street)){
 console.log("It is valid apartment")
 }else{
 console.log("It is not valid apartment")};
+/* Comments Task 1 
+1. Условие нужно было написать внутри функции, но всеравно Молодец!
+*/
+
 
 //Task 2
 let phone = '666565666';
@@ -139,9 +143,17 @@ internPhone('+46776786868'); // true
 console.log('This is the not internetional phone',phone);
 console.log('This is internetional phone',inPhone);
 
+/* Comments Task 2 
+1. Отлично!
+*/
+
 //Task 3
 let checkType = (datatype) => {
     return (typeof datatype) 
 };
 let datatype = "Hi there";
 console.log('Here is the check of data type', typeof datatype);
+/* Comments Task 3
+1. Не вижу вызов функции?
+2. И нет условия является ли тип стрингой
+*/
