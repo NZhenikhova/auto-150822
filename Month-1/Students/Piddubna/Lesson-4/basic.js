@@ -34,7 +34,7 @@ Leсtion 4
 // petsName.unshift('Kesha');
 // console.log(petsName);
 //Task 2 for classwork
-let = allFavoriteCars = ['BMW', 'Mercedes', 'Volvo', 'Volkswagen']
+let allFavoriteCars = ['BMW', 'Mercedes', 'Volvo', 'Volkswagen'];
 allFavoriteCars.push('Saab');
 allFavoriteCars.unshift('Toyota');
 console.log(allFavoriteCars);
