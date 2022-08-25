@@ -44,7 +44,7 @@ Leсtion 4
 //     console.log(i);
 // }
 
-let allGermanCars = ['BMW', 'Mercedes', 'Volvo', 'Volkswagen', 'Toyota'];
+// let allGermanCars = ['BMW', 'Mercedes', 'Volvo', 'Volkswagen', 'Toyota'];
 
 // for(let i=0; i<5; i++) {
 //     console.log(allGermanCars[i]);
@@ -67,7 +67,41 @@ let allGermanCars = ['BMW', 'Mercedes', 'Volvo', 'Volkswagen', 'Toyota'];
 //     console.log(i);
 // };
 
-//Test task 3
-for (let i=0; i<=10; i++) {
-    console.log(i);
-}
+// //Test task 3
+// for (let i=0; i<=10; i++) {
+//     console.log(i);
+// }
+
+// let allGermanCars = ['BMW', 'Mercedes', 'Volvo', 'Volkswagen', 'Toyota'];
+
+// function isCarInArray(nameAuto) {
+//     for(let i = 0; i < allGermanCars.length; i++){
+//         if(allGermanCars[i].includes(nameAuto)) {
+//             let auto = allGermanCars[i];
+//             return auto;
+//         }
+//     }
+//     return 'There is no auto';
+// }
+// const result = isCarInArray('Volkswagen');
+// console.log('I have a car', result);
+
+// const allBritishCars = ['Jaguar', 'Aston Martin', 'Bentley','Land Rover'];
+// for (let i = 0; i < allBritishCars.length; i++){
+//     console.log(allBritishCars[i]);
+// }
+//     for(let item of allBritishCars){
+//         console.log(item);
+//     }
+
+// const allItalianCars = ['Pagani', 'Mazzerati', 'Ferrari', 'Lamborghini', 'Mazzanti'];
+// function searchForCar(nameAuto){
+//     for(let item of allItalianCars){
+//         if(item.includes(nameAuto)){
+//             let auto = item;
+//             return auto;
+//         }
+//     }
+// }
+// const assert = searchForCar('Pagani');
+// console.log(assert);
