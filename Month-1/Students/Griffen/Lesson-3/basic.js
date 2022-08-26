@@ -121,6 +121,13 @@ let result = square >= 100 || square >= 80 && streetName == 'School-street'
 }
 apartment(85, 'School-street'); //true
 
+/*
+Comments Task1
+1. Можно также было вернуть через return 
+2. Также можно square >= 100 || square >= 80  записать одинм кейсом  square >= 80 
+ будет покрывать и  square >= 100
+*/
+
 /* #2 Реализуйте функцию, который проверяет формат указанного телефона.
 Если телефон начинается с +, значит это международный формат.*/
 
@@ -130,13 +137,22 @@ function checkPhoneNum (phoneNum){
     console.log (`${phoneNum} имеет международный формат`)
 }
 checkPhoneNum(phoneNum);
+/* Comments Task2
+1. Не вижу проверку на номер, можно было сделать вот так:
+phoneNum[0] -  возвращает значение первого индекса
+phoneNum.includes('+', 0) - первым аргументов идет занчение которое мы ищем,
+а второй индекс на какой позиции мы ожидаем наше значение
+*/
 
 /* #3 Напишите стрелочную функцию которая проверит 
 тип данных аргумента на ‘string’ и выведет в консоль true. */
 
 const stringCheck = (argument) => {
 let type = typeof argument 
-argument = type ? console.log ('true') : console.log ('false');    
+argument = type ? console.log (true) : console.log (false);  
 }
 stringCheck('test');
-
+/* Comments Task3
+1. Можно не обрачивать ключевое слово в кавычки 'true' => true
+2. Так же можно вернуть значение с функции return type ? console.log (true) : console.log (false);    
+*/
