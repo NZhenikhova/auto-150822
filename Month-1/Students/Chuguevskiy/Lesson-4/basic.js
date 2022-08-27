@@ -159,10 +159,10 @@ const resultMyNamesFriends = searchName("Max");
 // то верните текст с “читабельной ошибкой” если длина массива меньше либо равна 5.
 // То запишите это значение в переменную где вызвана была функция.
 
-
-//let addFruits = "avocado";    // add new fruits , needed for second check
-//fruit.push(addFruits);
-
+/*
+let addFruits = "avocado";                                              // add new fruits , needed for first check
+fruit.push(addFruits);
+*/
 
 
 function lengthFruit(){
@@ -170,8 +170,7 @@ function lengthFruit(){
         if(fruit.length > 5 ){
             console.log("There are more than 5 elements in the array");
         }else if(fruit.length <= 5 ){
-            console.log(fruit.length);
-
+            console.log(fruit.length)                               // bad understand second terms
         };
     };
 };
