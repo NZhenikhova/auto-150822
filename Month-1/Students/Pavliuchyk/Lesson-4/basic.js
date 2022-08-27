@@ -37,11 +37,96 @@ for (let i = 0; i < 10; i++){
     console.log(i);
 }
 
-const allCar = ['BMW', 'Mercedes', 'Volvo', 'Volkswagen']
-for (let car = 0; car < 5; car ++){
-    console.log(allCar[car]);
-}
+// const allCar = ['BMW', 'Mercedes', 'Volvo', 'Volkswagen']
+// for (let car = 0; car < 5; car ++){
+//     console.log(allCar[car]);
+// }
 
 for (let a = 0; a <= 10; a++){
     console.log(a);
 }
+
+const allCar = ['BMW', 'Mercedes', 'Volvo', 'Volkswagen', 'Toyota'];
+function isCarInArray(nameAuto){
+    for (let q = 0; q < allCar.length; q++){
+        console.log('debug ', nameAuto);
+        if (allCar[q].includes(nameAuto)) {
+            let auto = allCar[q];
+            return auto;
+
+        }
+    }
+}
+
+const result = isCarInArray('Volvo');
+console.log('I have a car ', result);
+
+
+const allnewcars = ['jag', 'rolls', 'aston', 'bentley'];
+for (let item of allnewcars){
+    console.log(item);
+}
+
+
+/* HOMETASK 
+Task 1
+Сформируйте массив данных. 
+Перебором определите есть ли в массиве определенный элемент и запишите его в переменную. */ 
+
+let alphabetArray = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j'];
+
+function searchLetter(letter){
+    for (let i = 0; i < alphabetArray.length; i++) {
+        if (alphabetArray.includes(letter)){
+            let newLetter = letter;
+            console.log('Array includes this letter ', newLetter); 
+            break; 
+        }
+        else {
+            console.log(`Array doesn't include this letter ${letter}`);
+            break;
+        }      
+    }
+}
+searchLetter('g');
+searchLetter('v');
+
+/* Task 2
+Сформируйте два массива . Первый - определите циклом for of внутри функции есть ли у данного массива элемент, 
+если нет то верните в переменную первый элемент массива. */
+
+let myArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+function searchElement(numb){
+    for (let item of myArray){
+       if (myArray.includes(numb)) {
+        return console.log('Array includes element: ', numb);
+        }
+       else {let newVar = myArray[0]; 
+        return console.log ('Element was not found, the first element of Array is ', newVar);
+        }
+    }
+}
+searchElement(15); 
+searchElement(5);
+
+/* Task 3
+Второй -  определите циклом for внутри функции если длина массива больше 5 элементов, 
+то верните текст с “читабельной ошибкой” если длина массива меньше либо равна 5. 
+То запишите это значение в переменную где вызвана была функция. */
+
+const myArray2 = ['cola', 'pepsi', 'fanta', 'sprite', 'mirinda', 'jivchik'];
+ 
+let lengthOfArrayChecking = (paramName) => {
+    for (i = 0; i < myArray2.length; i++){
+        if(myArray2.length > paramName) {
+            return console.log('Error. Длина массива больше ' + paramName);
+        }
+        else {
+            return console.log('Длина массива меньше ', paramName, ' элементов');
+        }
+
+    }
+}
+
+lengthOfArrayChecking(5);
