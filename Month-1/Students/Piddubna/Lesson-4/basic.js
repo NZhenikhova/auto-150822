@@ -105,3 +105,48 @@ Leсtion 4
 // }
 // const assert = searchForCar('Pagani');
 // console.log(assert);
+
+
+/* Hometask for lesson 4
+ */
+//Task 1
+let fruits = ['Apple', 'Banana', 'Pear', 'Watermelon'];
+function fruitInArray(fruitName) {
+    for(let item of fruits){
+        if(item.includes(fruitName)){
+         let fruit = item;
+         return fruit;
+        }
+    }
+}
+const search = fruitInArray('Pear');
+console.log(search);
+
+//Task2
+let weather = ['rainy', 'windy', 'sunny', 'snowy'];
+function weatherInArray(weathertitle){
+    for(let key of weather){
+        if(key.includes(weathertitle)){
+            let weathertitle = key;
+            return key;
+        }
+    }
+}
+console.log(weather.includes('stormy'));
+const locate = weather.unshift('stormy');
+console.log(weather);
+
+
+//Task 3
+let mood = ['happy', 'depressed', 'in love', 'cozy'];
+function moodCheck(moodname){
+    for(var i = 0; i < mood.length; i++){
+        if(i > 5){
+            return 'Too many items';
+        }
+    }
+    return 'This one is okay'
+}
+const result = moodCheck(mood.length);
+console.log('Here is the result', result);
+
