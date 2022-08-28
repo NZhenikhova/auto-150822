@@ -119,7 +119,8 @@ for(let item of pets){
         return result;
         };
     };
-};const results = searchPets("lizard");
+};
+const results = searchPets("lizard");
 console.log(results);
 
 
@@ -128,17 +129,18 @@ console.log(results);
 // Первый - определите циклом for of внутри функции есть ли у данного массива элемент,
 // если нет то верните в переменную первый элемент массива.
 
-const myFriendsName = ["Katya","Danill","Lera","Kirill","Max"];
+const myFriendsNames= ["Katya","Danill","Lera","Kirill","Max"];
 const fruit = ["Apple","pear","watermelon","cherry","peach"];   // 5
 
 
 function searchName(names){
-    for(const item of myFriendsName){
+    for(const item of myFriendsNames){
         if(item.includes(names)){
-            let resultName = item;
-            console.log(resultName);      
+            let resultName = item;  
+           console.log(resultName);   /// вернет нужное имя и дальше не пойдет 
         }
-    };
+}  
+
 let result = names;                         // Я выбрал switch потому что, хотел сделать так чтобы когда значение names,было не валидно
 switch(names){                              // то выводилось только лишь myFriendsName[0] , а если делать данную проверку через for, то
     case "Katya":                           // по мимо myFriendsName[0] выводилось бы и валидный вывод.
@@ -151,8 +153,28 @@ switch(names){                              // то выводилось тол�
             console.log(myFriendsName[0]);
 };
 }; 
-const resultMyNamesFriends = searchName("Max");
+const resultMyNamesFriends = searchName("Mdfsdfax");
+console.log(resultMyNamesFriends);
 
+//Comments Task 2
+/*
+1) Эту задачу можно реализовать без switch, мы же отрабатываем работу с массивами, 
+а что если у тебя длинна массива 1000 ты будешь 1000 кейсов писать или нет? 
+
+function searchName(name){
+    for(const item of myFriendsNames){
+        if(item.includes(name)){
+            let resultName = item;  
+            return resultName;   /// вернет нужное имя и дальше не пойдет 
+        }
+}  
+return myFriendsNames[0];
+}
+const checkIfNoName = searchName("Mdfsdfax");
+const checkIfThereIsName = searchName("Max");
+console.log(checkIfThereIsName);
+
+*/
 
 //task3
 //Второй -  определите циклом for внутри функции если длина массива больше 5 элементов,
@@ -177,4 +199,18 @@ function lengthFruit(){
 lengthFruit();
 
 
+//Comments Task 3
+/*
+1) Эту задачу можно реализовать с  for(let i;  i < 5; i++);
+2) Нужно учиться использовать return, так ты сможешь манипулировать с результатом выполнения функции 
 
+if(fruit.length > 5 ){
+            console.log("There are more than 5 elements in the array"); /// можно заменить на return  'индекс с таким эдементов не существует'
+        } else if(fruit.length <= 5 ){
+            return fruit;            
+        };
+
+3) const result = lengthFruit();  // То запишите это значение в переменную где вызвана была функция. 
+
+Напишу вам решение по шагово для всех
+*/

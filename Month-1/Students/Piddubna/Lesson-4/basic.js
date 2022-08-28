@@ -122,6 +122,10 @@ function fruitInArray(fruitName) {
 const search = fruitInArray('Pear');
 console.log(search);
 
+/* Comments Task 1
+1) А что будет если фрукта не будет в массиве? Нужно обрабатыват и такой случай
+ */
+
 //Task2
 let weather = ['rainy', 'windy', 'sunny', 'snowy'];
 function weatherInArray(weathertitle){
@@ -136,11 +140,19 @@ console.log(weather.includes('stormy'));
 const locate = weather.unshift('stormy');
 console.log(weather);
 
+/* Comments Task 2
+1) А что будет если погоды не будет в массиве? Нужно обрабатыват и такой случай
+ */
 
-//Task 3
+/* Task 3
+Второй -  определите циклом for внутри функции если длина массива больше 5 элементов, 
+то верните текст с “читабельной ошибкой” если длина массива меньше либо равна 5
+То запишите это значение в переменную где вызвана была функция. 
+*/
+
 let mood = ['happy', 'depressed', 'in love', 'cozy'];
 function moodCheck(moodname){
-    for(var i = 0; i < mood.length; i++){
+    for(let i = 0; i < mood.length; i++){
         if(i > 5){
             return 'Too many items';
         }
@@ -149,4 +161,11 @@ function moodCheck(moodname){
 }
 const result = moodCheck(mood.length);
 console.log('Here is the result', result);
+
+/* Comments Task 3
+Напишу вам решение по шагово для всех
+*/
+
+
+
 
