@@ -104,11 +104,11 @@ const userName = {
     flat: "yes",
 };
 
-function searchUserNAme(){
+function searchUserName(){
     for(let search in userName){
         if(search == "age"){
             console.log(userName);
         };
     };
 };
-searchUserNAme();
+searchUserName();
