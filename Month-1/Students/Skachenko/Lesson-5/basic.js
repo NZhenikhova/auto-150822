@@ -74,11 +74,11 @@ const Jedi = {
     power: 'Force',
     ability: function () {
         return this.power
-    } 
+    }
 };
 
 for (let param in Jedi){
     if (param == age) {
-        return Jedi.ability()
-    }
+       Jedi.ability()
+    };
 };
