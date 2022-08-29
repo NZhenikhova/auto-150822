@@ -105,10 +105,10 @@ const userName = {
 };
 
 function searchUserNAme(){
-for(let search in userName){
-    if(search == "age"){
-        console.log(userName);
+    for(let search in userName){
+        if(search == "age"){
+            console.log(userName);
+        };
     };
 };
-}
 searchUserNAme();
