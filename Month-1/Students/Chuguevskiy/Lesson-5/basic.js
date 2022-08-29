@@ -103,8 +103,12 @@ const userName = {
     age: "18",
     flat: "yes",
 };
+
+function searchUserNAme(){
 for(let search in userName){
     if(search == "age"){
         console.log(userName);
     };
 };
+}
+searchUserNAme();
