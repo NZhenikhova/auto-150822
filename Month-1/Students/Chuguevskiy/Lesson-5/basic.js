@@ -99,8 +99,8 @@ console.log(man);
 
 
 const userName = {
-    name: "Bob",
-    age: "18",
+    name: "Max",
+    age: "23",
     flat: "yes",
 };
 
