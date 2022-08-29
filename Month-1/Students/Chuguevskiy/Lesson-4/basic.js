@@ -137,13 +137,13 @@ function searchName(names){
     for(const item of myFriendsNames){
         if(item.includes(names)){
             let resultName = item;  
-           console.log(resultName);   /// вернет нужное имя и дальше не пойдет 
+           console.log(resultName);  
         }
 }  
 
-let result = names;                         // Я выбрал switch потому что, хотел сделать так чтобы когда значение names,было не валидно
-switch(names){                              // то выводилось только лишь myFriendsName[0] , а если делать данную проверку через for, то
-    case "Katya":                           // по мимо myFriendsName[0] выводилось бы и валидный вывод.
+let result = names;                        
+switch(names){                             
+    case "Katya":                          
     case "Danill":
     case "Lera":
     case "Kirill":
