@@ -103,7 +103,7 @@ const searchManName  = (name) => {
 
 let man = searchManName ('Batty')
 console.log(man)
-
+// Отлично!
 
 /*task3
 Второй -  определите циклом for внутри функции если длина массива больше 5 элементов, то верните текст 
@@ -123,3 +123,4 @@ const searchWomanName =(b) => {
 
 let resultSearch = searchWomanName(5)
 console.log(resultSearch) 
+// Идея на верном путо но переменные это же совсем путает
