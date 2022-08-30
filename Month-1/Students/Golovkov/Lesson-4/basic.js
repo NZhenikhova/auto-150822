@@ -89,7 +89,7 @@ for (let i=0;i<alcohol.length; i++) {
 массива элемент, если нет то верните в переменную первый элемент массива.*/
 
 const manName = ['Robert', 'Eric', 'John', 'James'];
-const womanName = ['Jenny', 'Abby', 'Batty', 'Gloria', 'Babby', 'Kelly'];
+const womanName = ['Jenny', 'Abby', 'Batty', 'Gloria', 'Babby'];
 
 
 const searchManName  = (name) => {
@@ -115,10 +115,11 @@ const searchWomanName =(b) => {
     for (let i = 0; i<(womanName.length+1); i++) {
         d =i
         }
-        console.log(d)
+        //console.log(d)
         if (d<=b) {
-            console.log('Так и не понял что в этом случае сделать)')}
-            else {console.log('Длина массива больше', b)}
+            return d}
+            else if (d>b) {console.log('Длина массива больше', b)}
 }
 
-searchWomanName(5) 
+let resultSearch = searchWomanName(5)
+console.log(resultSearch) 
