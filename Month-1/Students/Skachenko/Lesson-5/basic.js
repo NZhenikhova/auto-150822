@@ -77,8 +77,42 @@ const Jedi = {
     }
 };
 
-for (let param in Jedi){
-    if (param == age) {
+    for (let param in Jedi){
+    if (param == 'age') {
        Jedi.ability()
     };
+};
+
+/*Создайте два объекта. В каждом из них есть функция. Во втором объекте 
+функция вызывает функцию первого объекта. Далее в первой функции первого 
+объекта мы проверяем есть ли “ключ - uid” у  второго объекта, если есть 
+то создаем новый  пустой объект к которому присваиваем второй объект, 
+новому объекту добавляем “ключ - changes, значение - true” и выводим в 
+консоль новый объект. (ожидаем объект с новым ключ- значением)*/
+
+console.log('/// Hometask///');
+const yoda = {
+    name: 'Yoda',
+    age: '900',
+    saberColor: 'green',
+    force: function () {
+        for (let key in grogu) {
+            if (key == 'uid') {
+                const newJedi = new Object ();
+                newJedi = grogu;
+                newJedi.changes = 'true'
+                console.log(newJedi);
+            };
+        }
+    }
+};
+
+const grogu = {
+    name: 'Grogu',
+    age: '50',
+    saberColor: '',
+    'uid': true,
+    force: function () {
+        yoda.force()
+    }
 };
