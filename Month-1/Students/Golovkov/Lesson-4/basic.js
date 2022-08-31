@@ -110,17 +110,16 @@ console.log(man)
 с “читабельной ошибкой” если длина массива меньше либо равна 5. 
 То запишите это значение в переменную где вызвана была функция.*/
 
-let d
-const searchWomanName =(b) => {
+let amount
+const searchWomanName =(number) => {
     for (let i = 0; i<(womanName.length+1); i++) {
-        d =i
+        amount =i
         }
-        //console.log(d)
-        if (d<=b) {
-            return d}
-            else if (d>b) {console.log('Длина массива больше', b)}
+        if (amount<=number) {
+            return amount}
+            else if (amount>number) {console.log('Длина массива больше', number)}
 }
 
-let resultSearch = searchWomanName(5)
-console.log(resultSearch) 
+let resultSearch = searchWomanName(4)
+//console.log(resultSearch) 
 // Идея на верном путо но переменные это же совсем путает
