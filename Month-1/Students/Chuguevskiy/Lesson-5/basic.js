@@ -7,17 +7,17 @@ const userName = {
 };
 console.log(userName.age,userName.name);
 
-// add object
+                                // add object
 userName.profession = "true";
 console.log(userName);
-// delete 
+                                // delete 
 delete userName.profession;
 console.log(userName);
-// create 
+                                // create 
 let object = new Object();
 let object2 = {};
 
-// input date string
+                                // input date string
 
 const userName = {
     name: "Bob",
@@ -73,7 +73,7 @@ for(let propertyName in userName){
 
 
 
-// methods objects "u this"
+// methods objects "this"
 
 
 const person = {
@@ -95,21 +95,50 @@ const human = {
 }
 const man =human.color();
 console.log(man);
-*/
 
 
 const userName = {
     name: "Max",
     age: "23",
     flat: "yes",
+        func: function(){
+            return this.age 
+        }
 };
 
+for (let name in userName){
+    if(name == "age"){
+ //       userName.flat =  names;
+ //       return names;
+  };
+}
+*/
 
-function searchUserName(){
-    for(let search in userName){
-        if(search == "age"){
-            console.log(userName);
+
+// Home Task 
+
+
+const human = {
+    name: "Alex",
+    age : "23",
+    id : "4542723476923",
+        func:function(){
+            for( let search in pets){
+                if(search == ["age"]){
+                    let newObject = new Object();
+                    newObject = pets ;
+                    newObject.changes="true";
+                    console.log(newObject);
+                };
         };
-    };
+    }
 };
-searchUserName();
+const pets = {
+    name: "Asya",
+    tipe: "cat",
+    age: "3",
+    color:function(){
+        human.func();
+    }
+};
+pets.color();

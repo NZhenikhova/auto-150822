@@ -86,7 +86,11 @@ function searchForJedi (jedi) {
     };
     return allJediKnights[0];    
 };
-
+//Comments Task 2
+/*
+1) Молодец использовал верно  возвращение первого элемента
+2) Почему не строгое сравнения?
+*/
 
 /// Задание 3/// 
 /*Второй -  определите циклом for внутри функции если длина массива больше 
@@ -109,3 +113,8 @@ function lengthOfSaberArray () {
     };
     return allJediKnights[0];    
 };
+
+/* Comments Task 3
+1) Можно сократить и переиспользовать, если вынесем в переменную let arrayLength = allLightSabers.length
+2) Вот это не выполниться никогда -  return allJediKnights[0];    
+*/

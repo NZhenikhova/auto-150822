@@ -107,7 +107,35 @@ const address = {
 }
     for (let propName1 in address){
     if(propName1 == 'land'){
-        console.log('Вызов функции объекта');
         address.homenumber();
+        console.log('Вызов функции объекта');
     }
   }
+
+  //Hometask
+  
+  console.log('Hometask');
+
+  const shipAddress = {
+    houseNumber: '23',
+    street: 'Mulholland drive',
+    city: 'Vaughan',
+    country: 'Canada',
+    zipCode: function(){
+        if (billAddress.cityB != null){
+            const thirdAddress = billAddress;
+            thirdAddress.changes = 'true';
+            console.log(thirdAddress);
+        }
+    }
+  }
+  const billAddress = {
+    houseNumberB: '32',
+    streetB: 'Seventy av',
+    cityB: 'Custer',
+    countryB: 'Mexico',
+    zipCodeB: function(){
+        let checkZip = shipAddress.zipCode();
+    }
+  }
+  billAddress.zipCodeB();
