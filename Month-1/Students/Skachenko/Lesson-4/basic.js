@@ -6,7 +6,7 @@ npm install cypress
 /*
 Устанавливаем проверочные тесты и запускаем cypress:
 npx cypress open
-*/
+
 
 const myPets = ['Dog', 'Cat', 'Hedgehog', 'Squirrel', 'Fox'];
 console.log(myPets.length, myPets[2]);
@@ -38,12 +38,24 @@ function isCarInArray (carName) {
 };
 const result = isCarInArray ('Vovo');
 console.log('I have a car', result);
-
+*/
 
 /// Задание 1/// 
 /*Сформируйте массив данных. Перебором определите есть ли в массиве определенный 
 элемент и запишите его в переменную.*/ 
 console.log('/// Задание 1///');
+const generalArray =['a', 'b', 'c', 'd', 'e', 'f'];
+function searchForElement (object) {
+    for (let i = 0; i < 6; i++) {
+    if (i = object) {
+        let variable = i;
+        return variable;
+    };
+    };
+};
+console.log(searchForElement ('z'));
+
+
 /* function isJediArray (jedi) {
 const allJediKnights = ['Luke Skywalker', 'Anakin Skywalker', 'Obi-Wan Kenobi', 'Qui-Gon Jinn', 'Count Dooku', 'Yoda'];
 for (jedi of allJediKnights) {
