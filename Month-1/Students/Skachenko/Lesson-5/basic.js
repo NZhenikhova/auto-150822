@@ -98,6 +98,7 @@ const yoda = {
     force: function () {
         for (let key in grogu) {
             if (key == 'uid') {
+                // объект должен быть в let
                 const newJedi = new Object ();
                 newJedi = grogu;
                 newJedi.changes = 'true'
