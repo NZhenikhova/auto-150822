@@ -1,10 +1,10 @@
-/*
-Устанавливаем cypress:
-npm install cypress
-*/
+//css
 
-/*
-Устанавливаем проверочные тесты и запускаем cypress:
-npx cypress open
-*/
+document.querySelector('');
+document.querySelectorAll('');
 
+//Xpath
+
+$x('');
+
+//
