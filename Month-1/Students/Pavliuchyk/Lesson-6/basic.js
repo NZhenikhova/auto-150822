@@ -47,20 +47,20 @@ Home task: https://www.beaxy.com/contact-us/
 
 Your Name
 //div[@class='rendered-form']/div[1]/div[1]/input
-//*/input[@class='form-control' and @type='text']
+//input[@class='form-control' and @type='text']
 
 Email
 //div[@class='rendered-form']/div[1]/div[2]/input
-//*/input[@class='form-control' and @type='email']
+//input[@class='form-control' and @type='email']
 
 Code Phone (Bolivia)
 //span[@class='countriesselect-block']/input[1] (поле для кода)
 //div[@class='ss-content']/img[32]
-//*/img[@data-country="BO" and @data-phonecode="591"] 
+//img[@data-country="BO" and @data-phonecode="591"] 
 
 Phone
 //span[@class='countriesselect-block']/input[last()]
-//*/input[@type='tel' and @name='phone-countries-1657528703195-0']
+//input[@type='tel' and @name='phone-countries-1657528703195-0']
 
 Text
 //textarea[@class='form-control']
