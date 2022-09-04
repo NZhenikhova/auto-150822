@@ -122,7 +122,9 @@ const address = {
     city: 'Vaughan',
     country: 'Canada',
     zipCode: function(){
+        // хороший вариант проверки поля
         if (billAddress.cityB != null){
+            // объект нужно объвить сначало,а после присваивать. Иначе, исходя из строки не понятно что это объект.
             const thirdAddress = billAddress;
             thirdAddress.changes = 'true';
             console.log(thirdAddress);
@@ -135,6 +137,7 @@ const address = {
     cityB: 'Custer',
     countryB: 'Mexico',
     zipCodeB: function(){
+        // лишняя переменная checkZip
         let checkZip = shipAddress.zipCode();
     }
   }
