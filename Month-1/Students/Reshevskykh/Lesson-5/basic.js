@@ -65,5 +65,6 @@ for(keyName in user4){
             console.log(user4.address, 'Вызов функции')
 }
 }
+//
 
 
