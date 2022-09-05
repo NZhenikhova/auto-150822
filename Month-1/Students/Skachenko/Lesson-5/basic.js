@@ -99,9 +99,9 @@ const yoda = {
         for (let key in grogu) {
             if (key == 'uid') {
                 // объект должен быть в let
-                const newJedi = new Object ();
+                let newJedi = new Object ();
                 newJedi = grogu;
-                newJedi.changes = 'true'
+                newJedi.changes = true
                 console.log(newJedi);
             };
         }

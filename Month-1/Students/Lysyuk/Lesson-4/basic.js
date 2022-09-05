@@ -1,26 +1,28 @@
-Массивы 
-
-const automobile1 = 'BMW';
-const automobile2 = 'Mercedes';
-const automobile3 = 'Volvo';
-const automobile4 = 'Volkswagen';
-
-let cats=[];
-console.log('Длина массива,cats.lenght');
 
 
-const allCars=['BMW','Mercedes','Volvo','Volkswagen'];
-console.log('Our array',allCars);
+//Homework4
+
+//task1
+//Сформируйте массив данных. 
+//Перебором определите есть ли в массиве определенный элемент и запишите его в переменную.
 
 
-const  pets=[`dog',`cat,`rabbit`,`elephant`]
-console.log('Длина масива',my pets.length);
-console log(index,my pets[2]);
+let Allvegetables= ['Cabbage','Carrot','Cucumber','Paper','Tomato'];
+ function searchForVegetables(nameVegetables){
+       for(let item of allVegetables){
+       if(item.includes(nameVegetable)){
+              let Vegetables=item;
+              return Vegetables;
+       }
+       }
+    };
 
+    const search = VegetablesInArray('Paper');
+   console.log(search);
 
-const allMachines=['BMW','Mercedes','VolvoVo','lkswagen'];
-console.log(`Added new machine`,allMachines)
+   //task2
+   //Сформируйте два массива . 
+   //Первый - определите циклом for of внутри функции есть ли у данного массива элемент,
+   // если нет то верните в переменную первый элемент массива.
 
-
-const allFavoriteCars = ['BMW', 'Mercedes', 'Volvo', 'Volkswagen'];
-console.log allFavoriteCars.unshift(`Ferrari`), allFavouriteCars.push(`Ferrari`);
+   const allCollors
