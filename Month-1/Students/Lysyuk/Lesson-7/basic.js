@@ -1,11 +1,31 @@
-//локаторы CSS
+//Home task:
 
-/* tagname[attribute=value]
+//Составьте css селекторы для формы “Deposits and Withdrawals”
+// на странице суппорт https://www.beaxy.com/help/support/
 
-Основные виды селекторов
+/*email
+ #your-email22
 
-//div-елюс таким тегом
-//#id-ел. с данным id
-//.class-ел. с таким классом
-//
+/*Subject
+#your-subject2
 
+/*Description
+ #your-message002
+
+ /*Deposit or Withdrawal
+  #your-deposit
+
+/*Date of Deposit/Withdrawal
+ #your-date2
+ 
+/*Status of Transaction
+ #your-status
+
+/*Provide blockchain explorer URL or transaction ID
+ #your-provide
+
+/*Beaxy Transaction ID
+ #your-id
+
+/*Submit
+#button-16351548224131
