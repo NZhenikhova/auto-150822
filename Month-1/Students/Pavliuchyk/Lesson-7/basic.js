@@ -19,18 +19,19 @@ Your email address:
 #your-email22
 input[name='your-email22'] или [name='your-email22']
 
-
 Subject
 #your-subject2
 input[name='your-subject2'] или [name='your-subject2']
 
 Description:
 #your-message002
+input[title~='details']
 input[name='your-message002'] или [name='your-message002']
+
 
 Deposit or Withdrawal:
 #your-deposit
-select[name='your-deposit']
+select[name='your-deposit'] или [name='your-deposit']
 
 Date of Deposit/Withdrawal
 #your-date2
@@ -46,4 +47,13 @@ input[name='your-provide'] или [name='your-provide']
 
 Beaxy Transaction ID
 #your-id
-input[name='your-id'] или [name='your-id'] */
+input[title~='Transaction']
+input[name='your-id'] или [name='your-id']
+
+
+Button 'submit'
+#button-16351548224132
+button[name*='32']
+button[value='Submit'] или [value='Submit']
+
+*/
