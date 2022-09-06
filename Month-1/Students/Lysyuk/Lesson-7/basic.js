@@ -1,7 +1,7 @@
 //Home task:
 
 //Составьте css селекторы для формы “Deposits and Withdrawals”
-// на странице суппорт https://www.beaxy.com/help/support/
+// на странице support https://www.beaxy.com/help/support/
 
 /*email
  #your-email22
