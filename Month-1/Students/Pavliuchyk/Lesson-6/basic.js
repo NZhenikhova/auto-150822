@@ -12,7 +12,7 @@ $x('//div@[class="searchform"]');
 $x("//li[@class='page-item']")/li[16];
 
 
-Practical task: Сформируйте локаторы:
+/* Practical task: Сформируйте локаторы:
 
 Заголовка страницы https://www.beaxy.com/blog/
 //h1[@class='title'] 
@@ -69,4 +69,6 @@ Text
 Send
 //button[@class='btn-default btn']
 //div[@class='rendered-form']/div[1]/div[5]/button
+
+*/
 
