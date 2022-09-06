@@ -7,10 +7,10 @@
  //*[@class="popUp-form-title"]
 
 //css
-document.querySelector('');
-document.querySelectorAll('');
+//document.querySelector('');
+//document.querySelectorAll('');
 //xPath
-$x('');
+//$x('');
 
 
 //Предикаты XPath
@@ -29,10 +29,10 @@ $x('');
 
 //1  $x('div[@class='searchform']/input');
 //или 
-$x("input[type='text']");
+//$x("input[type='text']");
 
 //2  
-$x("//ul[@class='glossary_list']/li[17]");
+//$x("//ul[@class='glossary_list']/li[17]");
 
 //пример атрибута
 //a[@href="https://apps.apple.com/ua/app/beaxy-exchange/id1493015933?"
@@ -45,37 +45,52 @@ $x("//ul[@class='glossary_list']/li[17]");
 
 
 
-// Practical task: 
+///////////////// Practical task: 
+
 //Сформируйте локаторы:
-//Заголовка страницы https://www.beaxy.com/blog/
 
 
-//*[@class='title'];
-//h1[@class ='title']
+// Заголовка страницы https://www.beaxy.com/blog/
+
+//h1[@class='title'] 
+ //*[@class="page-title"]
+
+ 
+ //Раздела Podcasts - ссылку
+ //a[@href='https://www.beaxy.com/tag/podcast/']     //я искала по атрибуту 
+ //или 
+ //*[@href='https://www.beaxy.com/tag/podcast/']
+ 
 
 
+ //Найдите селектор даты и автора первого поста
+ //(локатор с использованием ‘text(), 
+ //contains’  и без.)
 
-//Раздела Podcasts - ссылку
-
-//*[@ href="https://www.beaxy.com/tag/podcast/";
-//ul[@class='blog-pagination']/li[@class='page-menu_header--item']/a/Podcasts
-
-
-//Найдите селектор даты и автора первого поста (локатор с использованием ‘text(), contains’  и без.)
+//*[text()="April  11, 2022"]                      // по тексту,но почему-то не ищет
+//*[text ()= "James "] 
+//*[contains(text(),"April")]                     //по contains нашло
+//p[@class="info-date"]                           //нашло
 
 
-          //Home task: https://www.beaxy.com/contact-us/
+////////////Home task: https://www.beaxy.com/contact-us/
+
 //Найти все селекторы для формы:
+//Your Name
+//input[ @type="text"]
 
-       //Your Name
-//div[@class="rendered form"]/div[1]/div[2]/input/div[@type="text"]
+//Email
+//input[ @type="email"] 
 
-      //Email
-//div[@class='rendered-form']/div[1]/div[2]//input/input[@class='form-control' and @type='email']
+//Code Phone (Bolivia)
+//span[@class='countriesselect-block']/input 
+//img[@data-phonecode="591"] 
 
-    //Code Phone (Bolivia)
-//span[@class='countriesselect-block']/input[last()]/input[@type='tel',@name='phone-countries-1657528703195-0'
-    //Text
-//div/textarea[@class="form-control"]/textarea
-    //Send
-//div/button[text()="Send"]')
+//Phone
+//input [@type="tel"]
+
+//Text
+//textarea[@class="form-control"]
+
+//Send
+//button[@class="btn-default btn"]

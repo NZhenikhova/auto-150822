@@ -1,10 +1,11 @@
-/*
-Устанавливаем cypress:
-npm install cypress
-*/
+//локаторы CSS
 
-/*
-Устанавливаем проверочные тесты и запускаем cypress:
-npx cypress open
-*/
+/* tagname[attribute=value]
+
+Основные виды селекторов
+
+//div-елюс таким тегом
+//#id-ел. с данным id
+//.class-ел. с таким классом
+//
 
