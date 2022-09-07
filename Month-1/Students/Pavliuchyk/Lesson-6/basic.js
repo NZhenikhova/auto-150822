@@ -46,16 +46,16 @@ Home task: https://www.beaxy.com/contact-us/
 Найти все селекторы для формы:
 
 Your Name
-//div[@class='rendered-form']/div[1]/div[1]/input
+//div[@class='rendered-form']/div[1]/div[1]/input - сложный вариант, будет тяжело поддерживать
 //input[@class='form-control' and @type='text']
 
 Email
-//div[@class='rendered-form']/div[1]/div[2]/input
+//div[@class='rendered-form']/div[1]/div[2]/input - сложный вариант, будет тяжело поддерживать
 //input[@class='form-control' and @type='email']
 
 Code Phone (Bolivia)
-//span[@class='countriesselect-block']/input[1] (поле для кода)
-//div[@class='ss-content']/img[32]
+//span[@class='countriesselect-block']/input[1] (поле для кода) 
+//div[@class='ss-content']/img[32] - не ту картирнку находит
 //img[@data-country="BO" and @data-phonecode="591"] 
 
 Phone
@@ -64,7 +64,7 @@ Phone
 
 Text
 //textarea[@class='form-control']
-//div[@class='rendered-form']/div[1]/div[4]/textarea
+//div[@class='rendered-form']/div[1]/div[4]/textarea - сложный вариант, будет тяжело поддерживать
 
 Send
 //button[@class='btn-default btn']

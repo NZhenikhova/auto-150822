@@ -1,20 +1,20 @@
 //div[@class='entry-content]  - обращение по классам
 //div[@class='entry-content]/div
-``js
-1. entry-contents
-2. html/head/meta …
-3. //div[@class='entry-contents']
-4. //div[@class='entry-contents']/div
-5. //div[@class='entry-contents']//div
-6. //div
-7. //a|//img
-8. //*[@class="popUp-form-title"] - 
+// ``js
+// 1. entry-contents
+// 2. html/head/meta …
+// 3. //div[@class='entry-contents']
+// 4. //div[@class='entry-contents']/div
+// 5. //div[@class='entry-contents']//div
+// 6. //div
+// 7. //a|//img
+// 8. //*[@class="popUp-form-title"] - 
 
-document.querySelector('.ghmgmgh')
-document.querySelectorAll('.hvmghm')  поиск в вкладке Consile
-document.querySelector('.ghmgmgh').click();  - нажать через вкладке Consile
+// document.querySelector('.ghmgmgh')
+// document.querySelectorAll('.hvmghm')  поиск в вкладке Consile
+// document.querySelector('.ghmgmgh').click();  - нажать через вкладке Consile
 
-$x('') -поиск XPash в вкладке Consile
+// $x('') -поиск XPash в вкладке Consile
 
 
 /*Домашка
@@ -40,3 +40,7 @@ $x('') -поиск XPash в вкладке Consile
 //div[@class='formbuilder-textarea form-group field-textarea-1657528725179-0']/textarea  -  Text
 //textarea[@class='form-control']  - Text
 //button[@id='button-1657528739667-0'] -  Send
+
+/* Comments: 
+//Найти все селекторы для формы: отлично
+*/

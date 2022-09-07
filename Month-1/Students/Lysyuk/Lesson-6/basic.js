@@ -94,3 +94,9 @@
 
 //Send
 //button[@class="btn-default btn"]
+
+/*
+Comments:
+1. //input[ @type="text"] - находит два варианта
+
+*/

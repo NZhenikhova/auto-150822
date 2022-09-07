@@ -26,7 +26,7 @@ $x('//div[@class="entry-contents"]/div[1]/div/div/p|//div[@class="entry-contents
 $x('//div[@class="entry-contents"]/div[1]//p[contains(. ,"April 11, 2022")]|//div[@class="entry-contents"]/div[1]//a[contains(. ,"James Messi")]') //с использованием поиска по тексту
 
 
-=============
+///=============
 
 
 // Home task: https://www.beaxy.com/contact-us/
@@ -54,3 +54,8 @@ $x('//div[@class="form-send contact-us__form-send"]/form/div/div/div[4]/textarea
 //Send
 
 $x('//div[@class="form-send contact-us__form-send"]/form/div/div/div[5]/button')
+
+/* Comments 
+1) локаторы по домашней работе можно все упростить и сократить это будет сложно поддерживать,
+покажу на уроке варианты
+*/

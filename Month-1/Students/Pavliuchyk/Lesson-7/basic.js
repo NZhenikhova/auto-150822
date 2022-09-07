@@ -4,12 +4,12 @@
 //   form[data-form='register'] input[type='email]
 // div form через пробел (обращение 'на уровень' ниже)
 
-#popUp-register-email
-#_pass
-#popUp-register-phone._valid-input
-#popUp-register-promo
-form[data-form="register"] [type="submit"]
-[data-form="register"] button
+// #popUp-register-email
+// #_pass
+// #popUp-register-phone._valid-input
+// #popUp-register-promo
+// form[data-form="register"] [type="submit"]
+// [data-form="register"] button
 
 /* Home task:
 Составьте css селекторы для формы “Deposits and Withdrawals” 
@@ -57,3 +57,9 @@ button[name*='32']
 button[value='Submit'] или [value='Submit']
 
 */
+ /* Comments
+ Отлично!
+ 1) Выпадающие списки - их не вижу - разберем на уроке
+ */
+
+

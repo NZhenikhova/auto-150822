@@ -96,3 +96,11 @@ CSS:
 $x('//div[@class="formbuilder-button form-group field-button-1657528739667-0"]/button')
 
 */
+
+/*Comments:
+1) //div[@class='formbuilder-phone-countries form-group field-phone-countries-1657528703195-0']/span/span/img
+находит на код страны,
+2) Не совсем поняла, что значит вот эта запись - CSS:
+$x('//div[@class="formbuilder-button form-group field-button-1657528739667-0"]/button')
+
+*/

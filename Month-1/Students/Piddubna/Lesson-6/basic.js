@@ -25,5 +25,9 @@ $x('//div[@class="formbuilder-text form-group field-text-1657528683863-0"]/input
 $x('//div[@class="formbuilder-text form-group field-text-1657528683863-0"]/input[@type="text"]')
 $x('//span[@class="countriesselect-block"]/input[@class="phone_code_input"]')
 $x('//span[@class="countriesselect__selected"]')
-$x('//span[@class="countriesselect-wrap"]/input[@type="tel"]')
+$x('//span[@class="countriesselect-wrap"]/input[@type="tel"]') // не работает
 $x('//div[@class="formbuilder-textarea form-group field-textarea-1657528725179-0"]/textarea[@class="form-control"]')
+/*Comments:
+1) $x('//span[@class="countriesselect-wrap"]/input[@type="tel"]') // не работает
+
+*/

@@ -13,6 +13,13 @@ Home task: https://www.beaxy.com/contact-us/
 4)Text -  //div[@class='formbuilder-text form-group field-text-1657528653164-0']/grammarly-extension [2]/textarea
 5)Send - //div[@class='formbuilder-button form-group field-button-1657528739667-0']/button 
 
+Comments:
+1) Не поняла что сешь имелось ввиду, это можно сократить
+ 3)Phone Code Phone (Bolivia) - //div[@class='formbuilder-phone-countries form-group field-phone-countries-1657528703195-0']/span/input type=input type="text" class="phone_code_input" name="phone_code_input" value="" readonly="" data-countries="BO-591"
+2) не работает вот этот локатор 
+//div[@class='formbuilder-text form-group field-text-1657528653164-0']/grammarly-extension [2]/textarea
+
+На занятии покажу еще варианты.
 
 */
 

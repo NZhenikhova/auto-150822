@@ -48,3 +48,10 @@ Home task: https://www.beaxy.com/contact-us/
  Phone  //$x('//span/input[@type="tel"]')
  Text  //$x('//div/textarea[@class="form-control"]')
  Send  //$x('//div/button[text()="Send"]')
+
+ /*
+ 1)  Text  //$x('//div/textarea[@class="form-control"]') - можно сократить, подумай
+ 2)  Send  //$x('//div/button[text()="Send"]') - можно сократить
+
+  Отлично, хорошие варианты!
+ */
