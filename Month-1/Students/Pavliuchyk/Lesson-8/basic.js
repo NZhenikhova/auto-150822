@@ -1,11 +1,11 @@
 //a[@href='https://www.beaxy.com/author/james-messi/']/preceding-sibling::p
 //a[@href='https://www.beaxy.com/author/james-messi/']/ancestor::article. - родитель родителя
  //div[@class='item-body__info']/child::a
- ul:first-of-type
- :last-of-type
- :only-of-type
- :nth-of-type
- :nth-last-of-type
+//  ul:first-of-type
+//  :last-of-type
+//  :only-of-type
+//  :nth-of-type
+//  :nth-last-of-type
  
 /*
 1. :first-child – первый потомок своего родителя.
@@ -30,7 +30,7 @@ $$('[data-hook="colorGroup"] li label input')[3].click()
 
 
 /* Practical task: Сформировать селекторы
-https://yevheniiahlovatska.editorx.io/web-practice/post/what-to-wear-to-a-blacktie-event
+https://yevheniiahlovatska.editorx.io/web-practicce/post/what-to-wear-to-a-blacktie-event
 Сформировать селекторы на форму отправки комментария к посту
 
 emoji
@@ -75,6 +75,13 @@ div[data-hook='primary-btn'] button
 button[data-hook='submit-button']
 //button[@data-hook='submit-button']
 
+Comments:
+emoji
+button[aria-label*='emoji']>div>svg>path - это сложный локатор, его лучше не использовать
+//button[@aria-label='Add an emoji'] - отлично
+div[role='button'][data-hook*='emoji-group']   выбор "группы/вида" эмоджи
+//div[@role='button'][@class='gr5te']  - это автогенерируемый class н не подходит
+
 2. Home task:
 Используя Xpath построить селекторы для формы обратной связи 
 https://yevheniiahlovatska.editorx.io/web-practice/contact
@@ -83,24 +90,48 @@ https://yevheniiahlovatska.editorx.io/web-practice/contact
 //input[@type='email']
 //textarea[@placeholder='Your message']
 //span[text()='Submit']
+Comments: Отлично!
+
 
 Используя CSS построить селекторы для страницы товара
 	https://yevheniiahlovatska.editorx.io/web-practice/product-page/red-clutch
-svg>title[id='svgcid--fsuaikorvof5']   - иконка 
-p[class='font_5']>span>a[href*='web-practice']   - Highlite 
-button[class='_3omZ_']   - log in
-[data-hook='cart-icon-button']   - корзина
-svg[role='presentation']>title[id*=nrul]   - список
-[data-hook='sku']   - код товара
-div[id*='396w']>p   - out of stock
-[data-hook='product-title']   - название товара
-[data-hook='product-colors-title']   - название цвета
-[data-hook='icon']   - цвет
-[data-hook='number-input-spinner-title']   - текст количества
-input[type='number']   - инпут количества
-button[class*='buttonnext'] или span[class*='buttonnext']   - кнопка Add to cart
-wow-image[id*='13']>img   - изображение товара
-[data-hook='description']   - описание продукта под кнопкой
+1) svg>title[id='svgcid--fsuaikorvof5']   - иконка   !!! Comment 	не работает
+
+2) p[class='font_5']>span>a[href*='web-practice']   - Highlite сложный вариант надо улучшить,]>span>a[ 
+	это уже кажется немного пошло не туда, всегда надо искать оптимальный и лаконичный вариант
+Comments: [data-testid="richTextElement"] a[href$='web-practice']
+
+3) button[class='_3omZ_']   - log in
+Comments:  и что же вам всем так нравтся автогенерируемые классы,
+если значение аттрибута не читаемо и выглядит странно,
+значит оно скорее всего автогенерируемо и надо его избегать_3omZ_
+Можно было составить вот так - [data-testid="section-container"] button
+
+4) [data-hook='cart-icon-button']  - корзина Отлично
+
+5) svg[role='presentation']>title[id*=nrul]   - список 
+Comments: Можно было воспользоваться вот таким вариантом - [data-testid="section-container"] svg[role="presentation"]
+
+6) [data-hook='sku']   - код товара  Отично
+
+7) div[id*='396w']>p   - out of stock - вариант не совсем хороший, тут или брать несколько //main/section/div[@data-testid="richTextElement"] 
+и фильтровать нужный уже в коде, или чтобы девы добавили нормальный айди
+
+8) [data-hook='product-title']   - название товара Отлично
+   [data-hook='product-colors-title']   - название цвета Отлично
+   [data-hook='icon']   - цвет Отлично
+
+9) [data-hook='number-input-spinner-title']   - текст количества Отлично
+
+10) input[type='number']   - инпут количества  можно еще вот так было бы data-hook="number-input-spinner-input"
+
+11) button[class*='buttonnext'] или span[class*='buttonnext'] - кнопка Add to cart (Comments span не считается надежным используй его изредка)
+12) wow-image[id*='13']>img   - изображение товара  
+Comments: Твой селектор у меня не работат, опробуй вот этот - data-hook="responsive-gallery-media"
+
+
+13) [data-hook='description']   - описание продукта под кнопкой
+14)  Молодец, Отлично!
 [data-hook='stacked-info-item']:nth-child(1)   - весь первый блок Product Info
 [data-hook='stacked-info-item']:nth-child(1)>div>h2   - title первого блока 
 [data-hook='stacked-info-item']:nth-child(1)>div>div   - текст первого блока
@@ -124,15 +155,16 @@ a[href*='zamovlennya-novinok']   - первый предложенный вар�
 
 После как сделали клик https://www.ctrs.com.ua/smartfony/g990b-zaf-gray-samsung-s21fe-6128-gb-new-707505.html
 3. надо нажать на кнопку купить 
-button[class*=buyButton]
+button[class*=buyButton] - тут две кнопки возвращается
 
-4. Найти все кнопки с шарингом 
+4. Найти все кнопки с шарингом ! Отлично
 button[class*=share] img[alt~='Facebook']
 button[class*=share] img[alt~='Telegram']
 button[class*=share] img[alt~='Whatsapp']
 
+Еще обсудим эту задачу завтра
 
-
+*/
 
 
 
