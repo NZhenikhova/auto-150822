@@ -21,9 +21,9 @@ Home task:
 
 Используя Xpath построить селекторы для формы обратной связи
 
-//input[@id="input_comp-kdr40wmu1"]   - first name
+//input[@placeholder="First Name"]   - first name
 //input[@name="last-name"]           - last name
-//*[@id="comp-kdr40wnd"] //input     - e-mail
-//*[@class="_1VWbH has-custom-focus"] - message
-//*[@class='_3wqEk']                  - Submit
+//input[@type="email"]               - e-mail
+//*[@placeholder="Your message"]     - message
+//button[@data-testid="buttonElement"]  - Submit
 */
